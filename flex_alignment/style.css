@@ -1,0 +1,36 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.flex-container {
+  background-color: #f4f4f4;
+  display: flex;
+  flex-direction: row; /* Default */
+  /* Cross-Axis Align*/
+  align-items: center; /* Stretch(Default), Flex-Start, Flex-End, Center */
+  /* Main-Axis Align - (Make sure flex grow is off) */
+  justify-content: center; /* Flex-Start, Flex-End, Space-Around, Space-Between */
+  height: 50vh;
+}
+
+.item {
+  background: #f4f4f4;
+  border: #ccc solid 2px;
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+  border-radius: 10px;
+  /* flex: 1; */
+}
+
+.item-1 {
+  align-self: flex-start;
+}
+
+.item-3 {
+  align-self: flex-end;
+}
